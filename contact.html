@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Brief, Khovany Kem</title>
+  <meta name="description" content="Write a brief for Khovany Kem. The page copies it and shows it back to you.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,650;1,7..72,500&family=Sora:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="route-bar">
+    <a class="mark" href="index.html">
+      <span class="mark-k" aria-hidden="true">K</span>
+      <span class="mark-name">Khovany Kem</span>
+    </a>
+    <button class="stations-toggle" type="button" aria-expanded="false" aria-controls="stations" data-stations-toggle>Stations</button>
+    <nav id="stations" aria-label="Stations" data-stations>
+      <ol class="route">
+        <li><a href="index.html">Board</a></li>
+        <li><a href="cadence.html">Cadence</a></li>
+        <li><a href="floor.html">Floor</a></li>
+        <li><a href="standards.html">Standards</a></li>
+        <li><a href="contact.html" aria-current="page">Brief</a></li>
+      </ol>
+    </nav>
+  </header>
+  <main id="content" class="frame page-body" tabindex="-1">
+    <p class="plate">Station, Brief</p>
+    <h1>Write the brief.</h1>
+    <p class="deck">Post the work the way it would appear on a queue. Name yourself, the kind of help, the decision you need, and what is in the way. Khovany Kem reads a brief he can walk.</p>
+    <form class="brief-form" data-brief>
+      <label class="field">Your name
+        <input name="name" autocomplete="name" required>
+      </label>
+      <fieldset class="choices">
+        <legend>The work</legend>
+        <label><input type="radio" name="work" value="Project leadership" required> Project leadership</label>
+        <label><input type="radio" name="work" value="Operations design"> Operations design</label>
+        <label><input type="radio" name="work" value="Process map"> Process map</label>
+        <label><input type="radio" name="work" value="Office layout for flow"> Office layout for flow</label>
+        <label><input type="radio" name="work" value="Tooling recommendation"> Tooling recommendation</label>
+      </fieldset>
+      <label class="field">The decision you need
+        <input name="decision" required>
+      </label>
+      <label class="field">What is in the way
+        <textarea name="blockage" required></textarea>
+      </label>
+      <button type="submit">Copy the brief</button>
+    </form>
+    <div class="brief-out" data-brief-out hidden tabindex="-1">
+      <h2>The brief</h2>
+      <p data-brief-status aria-live="polite"></p>
+      <pre data-brief-text></pre>
+      <p data-brief-mail></p>
+    </div>
+    <p class="next"><a href="index.html">Return to the board</a></p>
+    <noscript>
+      <p>This page needs JavaScript to copy the brief and show it.</p>
+    </noscript>
+  </main>
+  <footer class="terminus frame">
+    <p>Khovany Kem. A process you can walk.</p>
+  </footer>
+  <noscript>
+    <style>
+      @media (max-width: 820px) {
+        .route-bar nav { display: block !important; }
+        .stations-toggle { display: none !important; }
+      }
+    </style>
+  </noscript>
+  <script src="site.js"></script>
+</body>
+</html>

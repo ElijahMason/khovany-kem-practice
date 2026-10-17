@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Floor, Khovany Kem</title>
+  <meta name="description" content="Khovany Kem lays out the room so you can walk the process. Desks and hardware follow the map.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,650;1,7..72,500&family=Sora:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="route-bar">
+    <a class="mark" href="index.html">
+      <span class="mark-k" aria-hidden="true">K</span>
+      <span class="mark-name">Khovany Kem</span>
+    </a>
+    <button class="stations-toggle" type="button" aria-expanded="false" aria-controls="stations" data-stations-toggle>Stations</button>
+    <nav id="stations" aria-label="Stations" data-stations>
+      <ol class="route">
+        <li><a href="index.html">Board</a></li>
+        <li><a href="cadence.html">Cadence</a></li>
+        <li><a href="floor.html" aria-current="page">Floor</a></li>
+        <li><a href="standards.html">Standards</a></li>
+        <li><a href="contact.html">Brief</a></li>
+      </ol>
+    </nav>
+  </header>
+  <main id="content" class="frame page-body" tabindex="-1">
+    <p class="plate">Station, Floor</p>
+    <h1>The room is a step, not a showroom.</h1>
+    <p class="deck">Khovany Kem works on hardware and on the layout of desks because the path is part of the process. He does not finish by lining up chairs.</p>
+    <figure class="diagram">
+      <h2>A generic room, in walk order</h2>
+      <ol class="bays">
+        <li>Door</li>
+        <li>Queue</li>
+        <li>Owners</li>
+        <li>Hardware</li>
+        <li>Decision</li>
+      </ol>
+      <figcaption>A type of plan. Your walls will differ. The order of the walk should not.</figcaption>
+    </figure>
+    <div class="prose">
+      <h2>What the walk should prove</h2>
+      <p>Start at the door. You should meet the queue before you meet a person. The queue is on a wall or a screen that faces the path, large enough to read without opening a laptop and hunting for a file.</p>
+      <p>From the queue, walk to the owner of the current step. That walk should be short. If the owner sits in another room because that is where the desk landed, the desk is in the wrong place.</p>
+      <p>The hardware for a step sits with that step. A printer, a bench, a second screen, a labeler: put it where the handoff happens. A closet at the far end of the plan adds a walk the map did not ask for.</p>
+      <p>End at the decision table. This is where a session writes the log, with the queue still in sight. If the table cannot see the queue, people talk from memory, and memory edits the line.</p>
+      <h2>When the map changes</h2>
+      <p>Move the room. Keep the bench, the screen, and the desk with the step they serve. Do not freeze a layout that matches an older map and then buy software to paper over the extra walk.</p>
+    </div>
+    <blockquote class="pull">
+      <p>If you cannot walk it, you do not have it.</p>
+    </blockquote>
+    <p class="next"><a href="standards.html">Next station, Standards</a></p>
+  </main>
+  <footer class="terminus frame">
+    <p>Khovany Kem. A process you can walk.</p>
+  </footer>
+  <noscript>
+    <style>
+      @media (max-width: 820px) {
+        .route-bar nav { display: block !important; }
+        .stations-toggle { display: none !important; }
+      }
+    </style>
+  </noscript>
+  <script src="site.js"></script>
+</body>
+</html>

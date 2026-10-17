@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Standards, Khovany Kem</title>
+  <meta name="description" content="Four standards Khovany Kem posts: one owner, a visible queue, a decision, a room that matches the process.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,650;1,7..72,500&family=Sora:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="route-bar">
+    <a class="mark" href="index.html">
+      <span class="mark-k" aria-hidden="true">K</span>
+      <span class="mark-name">Khovany Kem</span>
+    </a>
+    <button class="stations-toggle" type="button" aria-expanded="false" aria-controls="stations" data-stations-toggle>Stations</button>
+    <nav id="stations" aria-label="Stations" data-stations>
+      <ol class="route">
+        <li><a href="index.html">Board</a></li>
+        <li><a href="cadence.html">Cadence</a></li>
+        <li><a href="floor.html">Floor</a></li>
+        <li><a href="standards.html" aria-current="page">Standards</a></li>
+        <li><a href="contact.html">Brief</a></li>
+      </ol>
+    </nav>
+  </header>
+  <main id="content" class="frame page-body" tabindex="-1">
+    <p class="plate">Station, Standards</p>
+    <h1>Four rules, posted.</h1>
+    <p class="deck">These are how Khovany Kem runs a project. They are short because people have to hold them while they work.</p>
+    <ol class="rules">
+      <li>
+        <div>
+          <h2>One owner per step</h2>
+          <p>Write one name on the step. That person can ask for help. They cannot hand the step to a group and walk away. If two names are already on it, split the step until each part has one name, or choose. Khovany will make you choose.</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>A visible queue</h2>
+          <p>The queue shows open work, the owner, and the next decision. The people who do the work can read it without asking. A message thread is not a queue. A hallway agreement is not a queue. If a line is real, it is posted.</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>A meeting that ends in a decision</h2>
+          <p>Open the session against the queue. Close it against the log. The decision is a sentence: what changes, who owns the change, and when the queue will show it. If you cannot write the sentence, you do not have a decision. Write the missing fact and its owner instead, and post that.</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>A room that matches the process</h2>
+          <p>The path, the desks, and the hardware follow the map. When a step moves, the thing that step needs moves with it. Khovany keeps this with the project because a correct map in a contrary room trains people to ignore the map.</p>
+        </div>
+      </li>
+    </ol>
+    <div class="prose">
+      <h2>How to use them</h2>
+      <p>Pick a step that is stuck. Read the four rules against it. You will usually find two owners, a line that is not posted, a meeting that ended in notes, or a walk the room makes longer than the map. Fix that one. Then read the queue again.</p>
+    </div>
+    <p class="next"><a href="contact.html">Next station, Brief</a></p>
+  </main>
+  <footer class="terminus frame">
+    <p>Khovany Kem. A process you can walk.</p>
+  </footer>
+  <noscript>
+    <style>
+      @media (max-width: 820px) {
+        .route-bar nav { display: block !important; }
+        .stations-toggle { display: none !important; }
+      }
+    </style>
+  </noscript>
+  <script src="site.js"></script>
+</body>
+</html>
