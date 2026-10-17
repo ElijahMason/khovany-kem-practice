@@ -30,10 +30,11 @@ jobs:
           fetch-depth: 0
       - name: Assemble the three branches
         run: |
+          git fetch origin main acid folio
           mkdir -p _site/acid _site/folio
-          git archive main | tar -x -C _site
-          git archive acid | tar -x -C _site/acid
-          git archive folio | tar -x -C _site/folio
+          git archive origin/main | tar -x -C _site
+          git archive origin/acid | tar -x -C _site/acid
+          git archive origin/folio | tar -x -C _site/folio
           rm -rf _site/.github _site/acid/.github _site/folio/.github
       - name: Upload
         uses: actions/upload-pages-artifact@v3
