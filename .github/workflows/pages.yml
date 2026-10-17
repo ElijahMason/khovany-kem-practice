@@ -1,0 +1,44 @@
+name: pages
+
+on:
+  push:
+    branches:
+      - main
+      - acid
+      - folio
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Assemble the three branches
+        run: |
+          mkdir -p _site/acid _site/folio
+          git archive main | tar -x -C _site
+          git archive acid | tar -x -C _site/acid
+          git archive folio | tar -x -C _site/folio
+          rm -rf _site/.github _site/acid/.github _site/folio/.github
+      - name: Upload
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
