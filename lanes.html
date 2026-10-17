@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lanes, Khovany Kem</title>
+  <meta name="description" content="Five lanes Khovany Kem runs in parallel: leadership, operations, maps, layout, and tools.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Overpass:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="road.css">
+</head>
+<body>
+  <a class="skip" href="#road">Skip to the road</a>
+  <div class="asphalt">
+    <header class="gantry">
+      <p class="who">Khovany Kem</p>
+      <button class="lanes-btn" type="button" aria-expanded="false" aria-controls="lanes" data-lanes-toggle>Lanes</button>
+      <nav id="lanes" class="shoulder" aria-label="Lanes" data-lanes>
+        <a href="index.html">Mile 0</a>
+        <a href="lanes.html" aria-current="page">Lanes</a>
+        <a href="junction.html">Junction</a>
+        <a href="code.html">Code</a>
+        <a href="callbox.html">Call box</a>
+      </nav>
+    </header>
+    <main id="road" class="road" tabindex="-1">
+      <p class="mile-flag">Mile 1</p>
+      <h1>Five lanes, one direction</h1>
+      <p class="lead">These are the lanes Khovany Kem will take. They run side by side and stay the same width. Nothing here tapers into a pitch.</p>
+      <div class="lane-row">
+        <section class="lane">
+          <p class="lane-no">1</p>
+          <h2>Project leadership</h2>
+          <p>He holds the sequence, the names, and the decisions that are still open.</p>
+        </section>
+        <section class="lane">
+          <p class="lane-no">2</p>
+          <h2>Operations design</h2>
+          <p>He marks where work changes hands, and where a handoff should end.</p>
+        </section>
+        <section class="lane">
+          <p class="lane-no">3</p>
+          <h2>Process maps</h2>
+          <p>One sheet: the steps, the owner on each step, and the queue.</p>
+        </section>
+        <section class="lane">
+          <p class="lane-no">4</p>
+          <h2>Office layout</h2>
+          <p>Desks, benches, and hardware follow the map. The room is a lane you walk.</p>
+        </section>
+        <section class="lane">
+          <p class="lane-no">5</p>
+          <h2>Tooling</h2>
+          <p>He names a tool when it deletes a handoff. A louder screen stays off the road.</p>
+        </section>
+      </div>
+      <p class="next"><a href="junction.html">Next mile, the junction</a></p>
+
+      <footer class="end">
+        <p>Khovany Kem. A process you can walk.</p>
+      </footer>
+    </main>
+  </div>
+  <noscript>
+    <style>
+      @media (max-width: 760px) {
+        .shoulder { display: flex !important; flex-direction: column; }
+        .lanes-btn { display: none !important; }
+      }
+    </style>
+  </noscript>
+  <script src="road.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Junction, Khovany Kem</title>
+  <meta name="description" content="Khovany Kem treats the room as a junction. The path, the queue, and the hardware have right of way.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Overpass:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="road.css">
+</head>
+<body>
+  <a class="skip" href="#road">Skip to the road</a>
+  <div class="asphalt">
+    <header class="gantry">
+      <p class="who">Khovany Kem</p>
+      <button class="lanes-btn" type="button" aria-expanded="false" aria-controls="lanes" data-lanes-toggle>Lanes</button>
+      <nav id="lanes" class="shoulder" aria-label="Lanes" data-lanes>
+        <a href="index.html">Mile 0</a>
+        <a href="lanes.html">Lanes</a>
+        <a href="junction.html" aria-current="page">Junction</a>
+        <a href="code.html">Code</a>
+        <a href="callbox.html">Call box</a>
+      </nav>
+    </header>
+    <main id="road" class="road" tabindex="-1">
+      <p class="mile-flag">Mile 2</p>
+      <h1>The room is a junction</h1>
+      <p class="lead">Khovany Kem stripes desks, hardware, and the path so work crosses in a known order. This drawing is a type of junction, not a plan of a finished office.</p>
+      <div class="junction">
+        <section class="approach north">
+          <h2>North</h2>
+          <p>A side conversation. Yield. If it is not posted, it has no right of way.</p>
+        </section>
+        <section class="approach west">
+          <h2>West</h2>
+          <p>The queue. You may enter the session from here, and from here first.</p>
+        </section>
+        <p class="core">Write the decision</p>
+        <section class="approach east">
+          <h2>East</h2>
+          <p>The required exit. A loop that returns you to the same mile has not moved.</p>
+        </section>
+        <section class="approach south">
+          <h2>South</h2>
+          <p>The bench. Cross when the step needs the tool. Do not park a new tool in the middle to feel useful.</p>
+        </section>
+      </div>
+      <p class="lead follow">When the map changes, repaint the room. Do not add a sign that excuses a bad stripe, and do not buy software to hide the extra walk.</p>
+      <p class="next"><a href="code.html">Next mile, the code</a></p>
+
+      <footer class="end">
+        <p>Khovany Kem. A process you can walk.</p>
+      </footer>
+    </main>
+  </div>
+  <noscript>
+    <style>
+      @media (max-width: 760px) {
+        .shoulder { display: flex !important; flex-direction: column; }
+        .lanes-btn { display: none !important; }
+      }
+    </style>
+  </noscript>
+  <script src="road.js"></script>
+</body>
+</html>

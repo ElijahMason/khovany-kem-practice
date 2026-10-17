@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Road code, Khovany Kem</title>
+  <meta name="description" content="Four articles Khovany Kem posts: one name, a visible queue, a real stop, a room that matches the road.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Overpass:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="road.css">
+</head>
+<body>
+  <a class="skip" href="#road">Skip to the road</a>
+  <div class="asphalt">
+    <header class="gantry">
+      <p class="who">Khovany Kem</p>
+      <button class="lanes-btn" type="button" aria-expanded="false" aria-controls="lanes" data-lanes-toggle>Lanes</button>
+      <nav id="lanes" class="shoulder" aria-label="Lanes" data-lanes>
+        <a href="index.html">Mile 0</a>
+        <a href="lanes.html">Lanes</a>
+        <a href="junction.html">Junction</a>
+        <a href="code.html" aria-current="page">Code</a>
+        <a href="callbox.html">Call box</a>
+      </nav>
+    </header>
+    <main id="road" class="road" tabindex="-1">
+      <p class="mile-flag">Mile 3</p>
+      <h1>Road code</h1>
+      <p class="lead">Khovany Kem posts four articles. They are short because a lane has to hold them while it moves.</p>
+      <div class="statutes">
+        <article class="statute">
+          <p class="marker">Art. 1</p>
+          <div>
+            <h2>One name</h2>
+            <p>Paint one name on the step. That person can ask for help. They cannot hand the step to a group and coast. Two names means you split the step or you choose.</p>
+          </div>
+        </article>
+        <article class="statute">
+          <p class="marker">Art. 2</p>
+          <div>
+            <h2>A posted queue</h2>
+            <p>The shoulder shows open work, the owner, and the next decision. People who do the work can read it without asking. A hallway deal is not posted.</p>
+          </div>
+        </article>
+        <article class="statute">
+          <p class="marker">Art. 3</p>
+          <div>
+            <h2>A stop writes a decision</h2>
+            <p>Open against the queue. Close against the log. The decision is a sentence: what changes, who owns the change, and when the queue will show it. If you cannot write it, write the missing fact and its owner.</p>
+          </div>
+        </article>
+        <article class="statute">
+          <p class="marker">Art. 4</p>
+          <div>
+            <h2>The room matches the road</h2>
+            <p>The path, the desks, and the hardware follow the map. When a step moves, the thing that step needs moves with it. A true map in a contrary room teaches people to ignore the map.</p>
+          </div>
+        </article>
+      </div>
+      <p class="next"><a href="callbox.html">Next mile, the call box</a></p>
+
+      <footer class="end">
+        <p>Khovany Kem. A process you can walk.</p>
+      </footer>
+    </main>
+  </div>
+  <noscript>
+    <style>
+      @media (max-width: 760px) {
+        .shoulder { display: flex !important; flex-direction: column; }
+        .lanes-btn { display: none !important; }
+      }
+    </style>
+  </noscript>
+  <script src="road.js"></script>
+</body>
+</html>

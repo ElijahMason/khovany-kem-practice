@@ -3,113 +3,85 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Khovany Kem, Line K</title>
-  <meta name="description" content="Khovany Kem runs the project, the cadence, and the room. A process you can walk.">
+  <title>Khovany Kem, the road</title>
+  <meta name="description" content="Khovany Kem marks a project as a road you can walk. The miles keep their width.">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,650;1,7..72,500&family=Sora:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Overpass:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="road.css">
 </head>
-<body class="home">
-  <a class="skip" href="#content">Skip to content</a>
-  <header class="route-bar">
-    <a class="mark" href="index.html">
-      <span class="mark-k" aria-hidden="true">K</span>
-      <span class="mark-name">Khovany Kem</span>
-    </a>
-    <button class="stations-toggle" type="button" aria-expanded="false" aria-controls="stations" data-stations-toggle>Stations</button>
-    <nav id="stations" aria-label="Stations" data-stations>
-      <ol class="route">
-        <li><a href="index.html" aria-current="page">Board</a></li>
-        <li><a href="cadence.html">Cadence</a></li>
-        <li><a href="floor.html">Floor</a></li>
-        <li><a href="standards.html">Standards</a></li>
-        <li><a href="contact.html">Brief</a></li>
-      </ol>
-    </nav>
-  </header>
-  <main id="content" class="frame" tabindex="-1">
-    <div class="opening">
-      <div>
-        <p class="plate">Line K</p>
-        <h1>A process you can walk.</h1>
-        <p class="deck">Khovany Kem holds the project and the operating cadence. He also places desks, hardware, and the path so the room matches that cadence.</p>
-        <p class="next"><a href="cadence.html">Next station, Cadence</a></p>
+<body>
+  <a class="skip" href="#road">Skip to the road</a>
+  <div class="asphalt">
+    <header class="gantry">
+      <p class="who">Khovany Kem</p>
+      <button class="lanes-btn" type="button" aria-expanded="false" aria-controls="lanes" data-lanes-toggle>Lanes</button>
+      <nav id="lanes" class="shoulder" aria-label="Lanes" data-lanes>
+        <a href="index.html" aria-current="page">Mile 0</a>
+        <a href="lanes.html">Lanes</a>
+        <a href="junction.html">Junction</a>
+        <a href="code.html">Code</a>
+        <a href="callbox.html">Call box</a>
+      </nav>
+    </header>
+    <main id="road" class="road" tabindex="-1">
+      <p class="mile-flag">Mile 0</p>
+      <h1>Keep the width</h1>
+      <p class="lead">Khovany Kem runs the project and the cadence. He paints the work as a road. You stand on a mile, you can read the next one, and the lane does not shrink under you.</p>
+      <p class="motto-paint">A process you can walk.</p>
+      <div class="miles">
+        <section class="mile">
+          <p class="marker">01</p>
+          <div>
+            <h2>Name the work</h2>
+            <p>One sentence for the outcome. If it needs a paragraph, it is not ready to paint on the lane.</p>
+          </div>
+        </section>
+        <section class="mile">
+          <p class="marker">02</p>
+          <div>
+            <h2>Put one name on the step</h2>
+            <p>One person steers that step. Help can ride along. A second name that can shrug does not.</p>
+          </div>
+        </section>
+        <section class="mile">
+          <p class="marker">03</p>
+          <div>
+            <h2>Post the queue on the shoulder</h2>
+            <p>Open work, the owner, and the next decision sit where the lane can read them. A private message is off the road.</p>
+          </div>
+        </section>
+        <section class="mile">
+          <p class="marker">04</p>
+          <div>
+            <h2>Walk the room</h2>
+            <p>Desks and hardware are part of the stripe. Khovany Kem places them so the path matches the miles. He does not run a furniture install.</p>
+          </div>
+        </section>
+        <section class="mile">
+          <p class="marker">05</p>
+          <div>
+            <h2>Stop and write the decision</h2>
+            <p>A stop that ends in talk is idling. Write what changes, who owns it, and when the queue will show it. Then leave.</p>
+          </div>
+        </section>
       </div>
-      <figure class="diagram">
-        <h2>A generic engagement</h2>
-        <ol class="line">
-          <li>
-            <span class="code">K1</span>
-            <span class="name">Name the work</span>
-            <span class="note">Write the outcome in one sentence.</span>
-          </li>
-          <li>
-            <span class="code">K2</span>
-            <span class="name">Name one owner</span>
-            <span class="note">One person stands for the step.</span>
-          </li>
-          <li>
-            <span class="code">K3</span>
-            <span class="name">Post the queue</span>
-            <span class="note">The line sits where the room can see it.</span>
-          </li>
-          <li>
-            <span class="code">K4</span>
-            <span class="name">Walk the room</span>
-            <span class="note">Desks and hardware follow the steps.</span>
-          </li>
-          <li>
-            <span class="code">K5</span>
-            <span class="name">Leave with a decision</span>
-            <span class="note">The session writes it down before people go.</span>
-          </li>
-        </ol>
-        <figcaption>Five stations, equal spacing. A type of engagement, not a map of a finished office.</figcaption>
-      </figure>
-    </div>
-    <section class="offers" aria-labelledby="offers-title">
-      <h2 id="offers-title">What he will take on</h2>
-      <dl>
-        <div>
-          <dt>Project leadership</dt>
-          <dd>He holds the sequence, the owners, and the decisions that are still open.</dd>
-        </div>
-        <div>
-          <dt>Operations design</dt>
-          <dd>He draws how work passes from one person to the next, and where it should stop passing.</dd>
-        </div>
-        <div>
-          <dt>Process maps</dt>
-          <dd>One picture of the steps, the owner on each step, and the queue that holds them.</dd>
-        </div>
-        <div>
-          <dt>Office layout for flow</dt>
-          <dd>He places desks, benches, and hardware so you can walk the map. The room is part of the process. He does not run a furniture install.</dd>
-        </div>
-        <div>
-          <dt>Tooling recommendations</dt>
-          <dd>He names a tool when it removes a handoff you can point at. A louder screen is not the goal.</dd>
-        </div>
-      </dl>
-      <blockquote class="pull">
-        <p>Fewer handoffs, not a louder screen.</p>
-      </blockquote>
-      <p>When you can name the decision you need, <a href="contact.html">write the brief</a>.</p>
-    </section>
-  </main>
-  <footer class="terminus frame">
-    <p>Khovany Kem. A process you can walk.</p>
-  </footer>
+      <p class="next"><a href="lanes.html">Next mile, the lanes</a></p>
+
+      <footer class="end">
+        <p>Khovany Kem. A process you can walk.</p>
+      </footer>
+    </main>
+  </div>
   <noscript>
     <style>
-      @media (max-width: 820px) {
-        .route-bar nav { display: block !important; }
-        .stations-toggle { display: none !important; }
+      @media (max-width: 760px) {
+        .shoulder { display: flex !important; flex-direction: column; }
+        .lanes-btn { display: none !important; }
       }
     </style>
   </noscript>
-  <script src="site.js"></script>
+  <script src="road.js"></script>
 </body>
 </html>
