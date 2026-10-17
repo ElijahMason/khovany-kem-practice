@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KK-04 Brief, Khovany Kem</title>
+  <meta name="description" content="Sheet KK-04 is the engagement brief. Copy it and the sheet shows it back.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Spectral:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="sheet.css">
+</head>
+<body>
+  <a class="skip" href="#sheet">Skip to the sheet</a>
+  <article class="sheet" id="sheet" tabindex="-1">
+    <header class="titleblock">
+      <p class="stamp">KK-04</p>
+      <div class="title">
+        <p class="practice">Khovany Kem</p>
+        <h1>Engagement brief</h1>
+      </div>
+      <p class="motto">A process you can walk.</p>
+    </header>
+    <table class="control">
+      <tbody>
+        <tr>
+          <th scope="row">Document</th>
+          <td>KK-04 Engagement brief</td>
+        </tr>
+        <tr>
+          <th scope="row">Owner</th>
+          <td>Khovany Kem</td>
+        </tr>
+      </tbody>
+    </table>
+    <nav class="sheets" aria-label="Sheets">
+      <button type="button" aria-expanded="false" aria-controls="sheet-index" data-sheets-toggle>Sheets</button>
+      <ol id="sheet-index" data-sheets>
+          <li><a href="index.html">KK-00 Scope</a></li>
+          <li><a href="cadence.html">KK-01 Cadence</a></li>
+          <li><a href="floor.html">KK-02 Floor</a></li>
+          <li><a href="standards.html">KK-03 Standards</a></li>
+          <li><a href="brief.html" aria-current="page">KK-04 Brief</a></li>
+      </ol>
+    </nav>
+    <section class="block">
+      <h2>Use</h2>
+      <p>Write the work as a line on a queue. Your name, the kind of help, the decision you need, and what is in the way. Khovany Kem reads a brief he can walk.</p>
+    </section>
+    <form class="form" data-brief>
+      <div class="row">
+        <label for="name">Your name</label>
+        <input id="name" name="name" autocomplete="name" required>
+      </div>
+      <div class="row">
+        <p id="work-label">The work</p>
+        <div class="choice-list" role="radiogroup" aria-labelledby="work-label">
+          <label><input type="radio" name="work" value="Project leadership" required> Project leadership</label>
+          <label><input type="radio" name="work" value="Operations design"> Operations design</label>
+          <label><input type="radio" name="work" value="Process map"> Process map</label>
+          <label><input type="radio" name="work" value="Office layout for flow"> Office layout for flow</label>
+          <label><input type="radio" name="work" value="Tooling recommendation"> Tooling recommendation</label>
+        </div>
+      </div>
+      <div class="row">
+        <label for="decision">Decision required</label>
+        <input id="decision" name="decision" required>
+      </div>
+      <div class="row">
+        <label for="blockage">In the way</label>
+        <textarea id="blockage" name="blockage" required></textarea>
+      </div>
+      <div class="row action">
+        <span>Action</span>
+        <button type="submit">Copy the brief</button>
+      </div>
+    </form>
+    <div class="shown" data-brief-out hidden tabindex="-1">
+      <h2>Completed brief</h2>
+      <p data-brief-status aria-live="polite"></p>
+      <pre data-brief-text></pre>
+      <p data-brief-mail></p>
+    </div>
+    <noscript><section class="block"><p>This sheet needs JavaScript to copy the brief and show it.</p></section></noscript>
+
+    <footer class="sign">
+      <p>Practice owner</p>
+      <p>Khovany Kem. A process you can walk.</p>
+    </footer>
+  </article>
+  <noscript>
+    <style>
+      @media (max-width: 720px) {
+        .sheets ol { display: flex !important; }
+        .sheets button { display: none !important; }
+      }
+    </style>
+  </noscript>
+  <script src="sheet.js"></script>
+</body>
+</html>

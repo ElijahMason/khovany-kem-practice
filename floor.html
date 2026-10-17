@@ -3,72 +3,126 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Floor, Khovany Kem</title>
-  <meta name="description" content="Khovany Kem lays out the room so you can walk the process. Desks and hardware follow the map.">
+  <title>KK-02 Floor, Khovany Kem</title>
+  <meta name="description" content="Sheet KK-02 orders a generic room: door, queue, owner, hardware, decision.">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,650;1,7..72,500&family=Sora:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Spectral:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="sheet.css">
 </head>
 <body>
-  <a class="skip" href="#content">Skip to content</a>
-  <header class="route-bar">
-    <a class="mark" href="index.html">
-      <span class="mark-k" aria-hidden="true">K</span>
-      <span class="mark-name">Khovany Kem</span>
-    </a>
-    <button class="stations-toggle" type="button" aria-expanded="false" aria-controls="stations" data-stations-toggle>Stations</button>
-    <nav id="stations" aria-label="Stations" data-stations>
-      <ol class="route">
-        <li><a href="index.html">Board</a></li>
-        <li><a href="cadence.html">Cadence</a></li>
-        <li><a href="floor.html" aria-current="page">Floor</a></li>
-        <li><a href="standards.html">Standards</a></li>
-        <li><a href="contact.html">Brief</a></li>
+  <a class="skip" href="#sheet">Skip to the sheet</a>
+  <article class="sheet" id="sheet" tabindex="-1">
+    <header class="titleblock">
+      <p class="stamp">KK-02</p>
+      <div class="title">
+        <p class="practice">Khovany Kem</p>
+        <h1>Room and hardware</h1>
+      </div>
+      <p class="motto">A process you can walk.</p>
+    </header>
+    <table class="control">
+      <tbody>
+        <tr>
+          <th scope="row">Document</th>
+          <td>KK-02 Room and hardware</td>
+        </tr>
+        <tr>
+          <th scope="row">Owner</th>
+          <td>Khovany Kem</td>
+        </tr>
+      </tbody>
+    </table>
+    <nav class="sheets" aria-label="Sheets">
+      <button type="button" aria-expanded="false" aria-controls="sheet-index" data-sheets-toggle>Sheets</button>
+      <ol id="sheet-index" data-sheets>
+          <li><a href="index.html">KK-00 Scope</a></li>
+          <li><a href="cadence.html">KK-01 Cadence</a></li>
+          <li><a href="floor.html" aria-current="page">KK-02 Floor</a></li>
+          <li><a href="standards.html">KK-03 Standards</a></li>
+          <li><a href="brief.html">KK-04 Brief</a></li>
       </ol>
     </nav>
-  </header>
-  <main id="content" class="frame page-body" tabindex="-1">
-    <p class="plate">Station, Floor</p>
-    <h1>The room is a step, not a showroom.</h1>
-    <p class="deck">Khovany Kem works on hardware and on the layout of desks because the path is part of the process. He does not finish by lining up chairs.</p>
-    <figure class="diagram">
-      <h2>A generic room, in walk order</h2>
-      <ol class="bays">
-        <li>Door</li>
-        <li>Queue</li>
-        <li>Owners</li>
-        <li>Hardware</li>
-        <li>Decision</li>
-      </ol>
-      <figcaption>A type of plan. Your walls will differ. The order of the walk should not.</figcaption>
-    </figure>
-    <div class="prose">
-      <h2>What the walk should prove</h2>
-      <p>Start at the door. You should meet the queue before you meet a person. The queue is on a wall or a screen that faces the path, large enough to read without opening a laptop and hunting for a file.</p>
-      <p>From the queue, walk to the owner of the current step. That walk should be short. If the owner sits in another room because that is where the desk landed, the desk is in the wrong place.</p>
-      <p>The hardware for a step sits with that step. A printer, a bench, a second screen, a labeler: put it where the handoff happens. A closet at the far end of the plan adds a walk the map did not ask for.</p>
-      <p>End at the decision table. This is where a session writes the log, with the queue still in sight. If the table cannot see the queue, people talk from memory, and memory edits the line.</p>
+    <section class="block">
+      <h2>Use</h2>
+      <p>Walk the room in this order. The drawing is a type, not a survey of a finished office. Khovany Kem places desks and hardware so the path matches the map. He does not install furniture as a trade.</p>
+    </section>
+    <ol class="steps">
+      <li>
+        <p class="num">01</p>
+        <div class="step-body">
+          <h2>Door</h2>
+          <p>Enter here. The first thing you can read is the queue, not a person.</p>
+        </div>
+        <dl class="meta">
+          <dt>Check</dt>
+          <dd>The queue faces the path.</dd>
+        </dl>
+      </li>
+      <li>
+        <p class="num">02</p>
+        <div class="step-body">
+          <h2>Queue</h2>
+          <p>Read it without opening a laptop to hunt for a file. If you cannot point at a line, it is not posted.</p>
+        </div>
+        <dl class="meta">
+          <dt>Check</dt>
+          <dd>Owner and next decision are on the line.</dd>
+        </dl>
+      </li>
+      <li>
+        <p class="num">03</p>
+        <div class="step-body">
+          <h2>Owner</h2>
+          <p>Walk to the name on the current step. That walk is short. A long walk means the desk is in the wrong place.</p>
+        </div>
+        <dl class="meta">
+          <dt>Check</dt>
+          <dd>One desk, one active step.</dd>
+        </dl>
+      </li>
+      <li>
+        <p class="num">04</p>
+        <div class="step-body">
+          <h2>Hardware</h2>
+          <p>Printer, bench, screen, labeler: keep it with the step that uses it. A far closet adds a walk the map did not ask for.</p>
+        </div>
+        <dl class="meta">
+          <dt>Check</dt>
+          <dd>The tool is in reach of the step.</dd>
+        </dl>
+      </li>
+      <li>
+        <p class="num">05</p>
+        <div class="step-body">
+          <h2>Decision table</h2>
+          <p>Write the log here, with the queue still in sight. If the table cannot see the queue, people talk from memory.</p>
+        </div>
+        <dl class="meta">
+          <dt>Check</dt>
+          <dd>The queue is readable from the table.</dd>
+        </dl>
+      </li>
+    </ol>
+    <section class="block">
       <h2>When the map changes</h2>
-      <p>Move the room. Keep the bench, the screen, and the desk with the step they serve. Do not freeze a layout that matches an older map and then buy software to paper over the extra walk.</p>
-    </div>
-    <blockquote class="pull">
-      <p>If you cannot walk it, you do not have it.</p>
-    </blockquote>
-    <p class="next"><a href="standards.html">Next station, Standards</a></p>
-  </main>
-  <footer class="terminus frame">
-    <p>Khovany Kem. A process you can walk.</p>
-  </footer>
+      <p>Move the room. Do not keep an older layout and then buy a tool to cover the extra walk.</p>
+    </section>
+
+    <footer class="sign">
+      <p>Practice owner</p>
+      <p>Khovany Kem. A process you can walk.</p>
+    </footer>
+  </article>
   <noscript>
     <style>
-      @media (max-width: 820px) {
-        .route-bar nav { display: block !important; }
-        .stations-toggle { display: none !important; }
+      @media (max-width: 720px) {
+        .sheets ol { display: flex !important; }
+        .sheets button { display: none !important; }
       }
     </style>
   </noscript>
-  <script src="site.js"></script>
+  <script src="sheet.js"></script>
 </body>
 </html>

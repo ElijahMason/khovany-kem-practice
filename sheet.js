@@ -2,22 +2,21 @@
 const CONTACT_EMAIL = "";
 
 (function () {
-  const toggle = document.querySelector("[data-stations-toggle]");
-  const stations = document.querySelector("[data-stations]");
+  const toggle = document.querySelector("[data-sheets-toggle]");
+  const sheets = document.querySelector("[data-sheets]");
 
-  if (toggle && stations) {
+  if (toggle && sheets) {
     toggle.addEventListener("click", function () {
-      const open = stations.classList.toggle("is-open");
+      const open = sheets.classList.toggle("is-open");
       toggle.setAttribute("aria-expanded", open ? "true" : "false");
       if (open) {
-        const first = stations.querySelector("a");
+        const first = sheets.querySelector("a");
         if (first) first.focus();
       }
     });
-
     document.addEventListener("keydown", function (event) {
-      if (event.key === "Escape" && stations.classList.contains("is-open")) {
-        stations.classList.remove("is-open");
+      if (event.key === "Escape" && sheets.classList.contains("is-open")) {
+        sheets.classList.remove("is-open");
         toggle.setAttribute("aria-expanded", "false");
         toggle.focus();
       }
@@ -30,18 +29,16 @@ const CONTACT_EMAIL = "";
   form.addEventListener("submit", function (event) {
     event.preventDefault();
     const data = new FormData(form);
-    const name = String(data.get("name") || "").trim();
-    const work = String(data.get("work") || "").trim();
-    const decision = String(data.get("decision") || "").trim();
-    const blockage = String(data.get("blockage") || "").trim();
     const text = [
-      "Brief for Khovany Kem",
+      "SHEET KK-04",
+      "ENGAGEMENT BRIEF",
+      "Khovany Kem",
       "A process you can walk.",
       "",
-      "Name: " + name,
-      "Work: " + work,
-      "Decision needed: " + decision,
-      "In the way: " + blockage
+      "Request owner: " + String(data.get("name") || "").trim(),
+      "Work: " + String(data.get("work") || "").trim(),
+      "Decision required: " + String(data.get("decision") || "").trim(),
+      "In the way: " + String(data.get("blockage") || "").trim()
     ].join("\n");
 
     const out = document.querySelector("[data-brief-out]");
@@ -50,24 +47,22 @@ const CONTACT_EMAIL = "";
     const mail = document.querySelector("[data-brief-mail]");
     shown.textContent = text;
     out.hidden = false;
+    mail.replaceChildren();
 
-    if (mail) {
-      mail.replaceChildren();
-      const address = CONTACT_EMAIL.trim();
-      if (address && address.indexOf("@") !== -1) {
-        const link = document.createElement("a");
-        link.href = "mailto:" + address
-          + "?subject=" + encodeURIComponent("Brief for Khovany Kem")
-          + "&body=" + encodeURIComponent(text);
-        link.textContent = "Send this brief";
-        mail.appendChild(link);
-      }
+    const address = CONTACT_EMAIL.trim();
+    if (address && address.indexOf("@") !== -1) {
+      const link = document.createElement("a");
+      link.href = "mailto:" + address
+        + "?subject=" + encodeURIComponent("Sheet KK-04 for Khovany Kem")
+        + "&body=" + encodeURIComponent(text);
+      link.textContent = "Send this brief";
+      mail.appendChild(link);
     }
 
     const finish = function (copied) {
       status.textContent = copied
-        ? "Copied. The same words are below."
-        : "The brief is below. Select it and copy it from this block.";
+        ? "Copied. The same words are on the sheet below."
+        : "The brief is on the sheet below. Select it and copy it from this block.";
       out.focus();
     };
 

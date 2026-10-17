@@ -3,113 +3,94 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Khovany Kem, Line K</title>
-  <meta name="description" content="Khovany Kem runs the project, the cadence, and the room. A process you can walk.">
+  <title>KK-00 Khovany Kem</title>
+  <meta name="description" content="Khovany Kem holds the project, the cadence, and the room. Sheet KK-00 states the scope.">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,650;1,7..72,500&family=Sora:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Spectral:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="sheet.css">
 </head>
-<body class="home">
-  <a class="skip" href="#content">Skip to content</a>
-  <header class="route-bar">
-    <a class="mark" href="index.html">
-      <span class="mark-k" aria-hidden="true">K</span>
-      <span class="mark-name">Khovany Kem</span>
-    </a>
-    <button class="stations-toggle" type="button" aria-expanded="false" aria-controls="stations" data-stations-toggle>Stations</button>
-    <nav id="stations" aria-label="Stations" data-stations>
-      <ol class="route">
-        <li><a href="index.html" aria-current="page">Board</a></li>
-        <li><a href="cadence.html">Cadence</a></li>
-        <li><a href="floor.html">Floor</a></li>
-        <li><a href="standards.html">Standards</a></li>
-        <li><a href="contact.html">Brief</a></li>
+<body>
+  <a class="skip" href="#sheet">Skip to the sheet</a>
+  <article class="sheet" id="sheet" tabindex="-1">
+    <header class="titleblock">
+      <p class="stamp">KK-00</p>
+      <div class="title">
+        <p class="practice">Khovany Kem</p>
+        <h1>Standard work</h1>
+      </div>
+      <p class="motto">A process you can walk.</p>
+    </header>
+    <table class="control">
+      <tbody>
+        <tr>
+          <th scope="row">Document</th>
+          <td>KK-00 Scope</td>
+        </tr>
+        <tr>
+          <th scope="row">Owner</th>
+          <td>Khovany Kem</td>
+        </tr>
+      </tbody>
+    </table>
+    <nav class="sheets" aria-label="Sheets">
+      <button type="button" aria-expanded="false" aria-controls="sheet-index" data-sheets-toggle>Sheets</button>
+      <ol id="sheet-index" data-sheets>
+          <li><a href="index.html" aria-current="page">KK-00 Scope</a></li>
+          <li><a href="cadence.html">KK-01 Cadence</a></li>
+          <li><a href="floor.html">KK-02 Floor</a></li>
+          <li><a href="standards.html">KK-03 Standards</a></li>
+          <li><a href="brief.html">KK-04 Brief</a></li>
       </ol>
     </nav>
-  </header>
-  <main id="content" class="frame" tabindex="-1">
-    <div class="opening">
-      <div>
-        <p class="plate">Line K</p>
-        <h1>A process you can walk.</h1>
-        <p class="deck">Khovany Kem holds the project and the operating cadence. He also places desks, hardware, and the path so the room matches that cadence.</p>
-        <p class="next"><a href="cadence.html">Next station, Cadence</a></p>
-      </div>
-      <figure class="diagram">
-        <h2>A generic engagement</h2>
-        <ol class="line">
-          <li>
-            <span class="code">K1</span>
-            <span class="name">Name the work</span>
-            <span class="note">Write the outcome in one sentence.</span>
-          </li>
-          <li>
-            <span class="code">K2</span>
-            <span class="name">Name one owner</span>
-            <span class="note">One person stands for the step.</span>
-          </li>
-          <li>
-            <span class="code">K3</span>
-            <span class="name">Post the queue</span>
-            <span class="note">The line sits where the room can see it.</span>
-          </li>
-          <li>
-            <span class="code">K4</span>
-            <span class="name">Walk the room</span>
-            <span class="note">Desks and hardware follow the steps.</span>
-          </li>
-          <li>
-            <span class="code">K5</span>
-            <span class="name">Leave with a decision</span>
-            <span class="note">The session writes it down before people go.</span>
-          </li>
-        </ol>
-        <figcaption>Five stations, equal spacing. A type of engagement, not a map of a finished office.</figcaption>
-      </figure>
-    </div>
-    <section class="offers" aria-labelledby="offers-title">
-      <h2 id="offers-title">What he will take on</h2>
-      <dl>
-        <div>
-          <dt>Project leadership</dt>
-          <dd>He holds the sequence, the owners, and the decisions that are still open.</dd>
-        </div>
-        <div>
-          <dt>Operations design</dt>
-          <dd>He draws how work passes from one person to the next, and where it should stop passing.</dd>
-        </div>
-        <div>
-          <dt>Process maps</dt>
-          <dd>One picture of the steps, the owner on each step, and the queue that holds them.</dd>
-        </div>
-        <div>
-          <dt>Office layout for flow</dt>
-          <dd>He places desks, benches, and hardware so you can walk the map. The room is part of the process. He does not run a furniture install.</dd>
-        </div>
-        <div>
-          <dt>Tooling recommendations</dt>
-          <dd>He names a tool when it removes a handoff you can point at. A louder screen is not the goal.</dd>
-        </div>
-      </dl>
-      <blockquote class="pull">
-        <p>Fewer handoffs, not a louder screen.</p>
-      </blockquote>
-      <p>When you can name the decision you need, <a href="contact.html">write the brief</a>.</p>
+    <section class="block">
+      <h2>Purpose</h2>
+      <p>This sheet states the practice. Khovany Kem holds the project and the operating cadence. He includes the room, because a path you cannot walk is a process people will drop.</p>
     </section>
-  </main>
-  <footer class="terminus frame">
-    <p>Khovany Kem. A process you can walk.</p>
-  </footer>
+    <section class="block">
+      <h2>In scope</h2>
+    </section>
+    <dl class="scope">
+      <div>
+        <dt>01</dt>
+        <dd>Project leadership. He holds the sequence, the owners, and the decisions that are still open.</dd>
+      </div>
+      <div>
+        <dt>02</dt>
+        <dd>Operations design. He draws where work changes hands, and where a handoff should stop.</dd>
+      </div>
+      <div>
+        <dt>03</dt>
+        <dd>Process maps. Steps, one owner on each step, and the queue, on one sheet.</dd>
+      </div>
+      <div>
+        <dt>04</dt>
+        <dd>Office layout for flow. Desks, benches, and hardware follow the map.</dd>
+      </div>
+      <div>
+        <dt>05</dt>
+        <dd>Tooling recommendations. A tool stays when it removes a handoff you can name.</dd>
+      </div>
+    </dl>
+    <section class="block">
+      <h2>Out of scope</h2>
+      <p>He does not install furniture as a trade. He does not add a tool whose only effect is a louder queue. He does not count a meeting that ends in a recap.</p>
+    </section>
+
+    <footer class="sign">
+      <p>Practice owner</p>
+      <p>Khovany Kem. A process you can walk.</p>
+    </footer>
+  </article>
   <noscript>
     <style>
-      @media (max-width: 820px) {
-        .route-bar nav { display: block !important; }
-        .stations-toggle { display: none !important; }
+      @media (max-width: 720px) {
+        .sheets ol { display: flex !important; }
+        .sheets button { display: none !important; }
       }
     </style>
   </noscript>
-  <script src="site.js"></script>
+  <script src="sheet.js"></script>
 </body>
 </html>
